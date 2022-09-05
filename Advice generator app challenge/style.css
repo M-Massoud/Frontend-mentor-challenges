@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218deg, 23%, 16%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.advice-container {
+  background-color: hsl(217deg, 19%, 24%);
+  width: 50%;
+  border-radius: 15px;
+  padding: 50px;
+  position: relative;
+}
+.advice-container .advice-number {
+  color: hsl(150deg, 100%, 66%);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.advice-container .advice-content {
+  color: hsl(193deg, 38%, 86%);
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  margin: 50px 0;
+}
+.advice-container .divider {
+  height: 50px;
+  width: 100%;
+  background-image: url(./imgs/pattern-divider-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.advice-container .dice-button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(150deg, 100%, 66%);
+  position: absolute;
+  bottom: -37.5px;
+  left: 50%;
+  transform: translatex(-50%);
+  transition: all 400ms;
+}
+.advice-container .dice-button img {
+  height: 30px;
+  width: 30px;
+}
+.advice-container .dice-button:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+  box-shadow: 2px 0px 16px hsla(150deg, 100%, 66%, 0.55), -2px 0px 16px hsla(150deg, 100%, 66%, 0.55);
+}
+.advice-container q {
+  font-size: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .advice-container {
+    margin: 50px 0 100px 0;
+    width: 95%;
+  }
+  .advice-container .divider {
+    background-image: url(imgs/pattern-divider-mobile.svg);
+  }
+}/*# sourceMappingURL=style.css.map */
