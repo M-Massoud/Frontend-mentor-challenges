@@ -1,0 +1,125 @@
+// colors
+$main-dark-cyan: hsl(180, 29%, 50%);
+$light-grayish-cyan: hsl(180, 52%, 96%);
+$light-grayish-cyan-tablets: hsl(180, 31%, 95%);
+$dark-grayish-cyan: hsl(180, 8%, 52%);
+$very-dark-grayish-cyan: hsl(180, 14%, 20%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: $light-grayish-cyan;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+.header {
+  background-image: url(./images/bg-header-desktop.svg);
+  height: 150px;
+}
+
+.jobs-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.job-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 40px $main-dark-cyan;
+  border-radius: 5px;
+  padding: 30px;
+  .company-name {
+    color: $main-dark-cyan;
+  }
+
+  .job-info {
+    display: flex;
+  }
+
+  .job-details {
+    margin-left: 30px;
+  }
+
+  .job-metadata-top {
+    display: flex;
+
+    .featured-badge,
+    .new-badge {
+      color: white;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      margin: 0 10px;
+      border-radius: 20px;
+    }
+
+    .featured-badge {
+      background-color: black;
+    }
+
+    .new-badge {
+      background-color: $main-dark-cyan;
+    }
+  }
+
+  .job-metadata-bottom {
+    display: flex;
+  }
+
+  .job-role {
+    margin: 7px 0;
+    &:hover {
+      cursor: pointer;
+      color: $main-dark-cyan;
+    }
+  }
+
+  .job-metadata-bottom {
+    color: $dark-grayish-cyan;
+
+    ul {
+      display: inline-flex;
+    }
+
+    ul li {
+      margin-right: 45px;
+    }
+
+    li:first-of-type {
+      list-style: none;
+    }
+  }
+
+  .job-languages ul {
+    list-style: none;
+
+    li {
+      display: inline;
+      color: $main-dark-cyan;
+      background-color: $light-grayish-cyan-tablets;
+      padding: 7px;
+      border-radius: 3px;
+      font-weight: 700;
+      margin: 7px;
+      &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: $main-dark-cyan;
+      }
+    }
+  }
+}

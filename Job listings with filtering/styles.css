@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(180deg, 52%, 96%);
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.header {
+  background-image: url(./images/bg-header-desktop.svg);
+  height: 150px;
+}
+
+.jobs-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.job-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 40px hsl(180deg, 29%, 50%);
+  border-radius: 5px;
+  padding: 30px;
+}
+.job-container .company-name {
+  color: hsl(180deg, 29%, 50%);
+}
+.job-container .job-info {
+  display: flex;
+}
+.job-container .job-details {
+  margin-left: 30px;
+}
+.job-container .job-metadata-top {
+  display: flex;
+}
+.job-container .job-metadata-top .featured-badge,
+.job-container .job-metadata-top .new-badge {
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+.job-container .job-metadata-top .featured-badge {
+  background-color: black;
+}
+.job-container .job-metadata-top .new-badge {
+  background-color: hsl(180deg, 29%, 50%);
+}
+.job-container .job-metadata-bottom {
+  display: flex;
+}
+.job-container .job-role {
+  margin: 7px 0;
+}
+.job-container .job-role:hover {
+  cursor: pointer;
+  color: hsl(180deg, 29%, 50%);
+}
+.job-container .job-metadata-bottom {
+  color: hsl(180deg, 8%, 52%);
+}
+.job-container .job-metadata-bottom ul {
+  display: inline-flex;
+}
+.job-container .job-metadata-bottom ul li {
+  margin-right: 45px;
+}
+.job-container .job-metadata-bottom li:first-of-type {
+  list-style: none;
+}
+.job-container .job-languages ul {
+  list-style: none;
+}
+.job-container .job-languages ul li {
+  display: inline;
+  color: hsl(180deg, 29%, 50%);
+  background-color: hsl(180deg, 31%, 95%);
+  padding: 7px;
+  border-radius: 3px;
+  font-weight: 700;
+  margin: 7px;
+}
+.job-container .job-languages ul li:hover {
+  cursor: pointer;
+  color: white;
+  background-color: hsl(180deg, 29%, 50%);
+}/*# sourceMappingURL=styles.css.map */
