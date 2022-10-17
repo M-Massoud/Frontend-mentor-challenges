@@ -32,9 +32,10 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  box-shadow: 0px 0px 40px hsl(180deg, 29%, 50%);
+  box-shadow: 0px 0px 20px hsla(180deg, 29%, 50%, 0.4);
   border-radius: 5px;
   padding: 30px;
+  margin: 25px auto;
 }
 .job-container .company-name {
   color: hsl(180deg, 29%, 50%);
@@ -100,4 +101,8 @@ body {
   cursor: pointer;
   color: white;
   background-color: hsl(180deg, 29%, 50%);
+}
+
+.featured-job {
+  border-left: 5px solid hsl(180deg, 29%, 50%);
 }/*# sourceMappingURL=styles.css.map */
