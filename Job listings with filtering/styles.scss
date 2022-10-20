@@ -19,6 +19,7 @@ body {
 .attribution {
   font-size: 12px;
   text-align: center;
+  margin-bottom: 10px;
 
   a {
     color: hsl(228, 45%, 44%);
@@ -27,6 +28,7 @@ body {
 
 .header {
   background-image: url(./images/bg-header-desktop.svg);
+  background-color: $main-dark-cyan;
   height: 150px;
 }
 
@@ -111,7 +113,7 @@ body {
     list-style: none;
 
     li {
-      display: inline;
+      display: inline-block;
       color: $main-dark-cyan;
       background-color: $light-grayish-cyan-tablets;
       padding: 7px;
@@ -129,4 +131,79 @@ body {
 
 .featured-job {
   border-left: 5px solid $main-dark-cyan;
+}
+
+.filter-bar {
+  width: 90%;
+  margin-top: -40px;
+  padding: 30px;
+
+  .clear {
+    color: $main-dark-cyan;
+    cursor: pointer;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .icon-remove {
+    background-color: $main-dark-cyan;
+    padding: 7px;
+    padding: 7px auto;
+    margin-left: 7px;
+    margin: auto;
+  }
+
+  ul li {
+    padding-right: 0 !important;
+    &:hover .icon-remove {
+      background-color: black;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-image: url(./images/bg-header-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+  }
+
+  .job-container {
+    position: relative;
+    margin-top: 75px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .job-info {
+      .job-details {
+        margin: 25px 10px;
+      }
+      .company-logo {
+        position: absolute;
+        top: -45px;
+      }
+    }
+
+    .job-languages {
+      border-top: 2px solid rgba(128, 128, 128, 0.35);
+      width: 95%;
+      padding-top: 10px;
+    }
+  }
+
+  .filter-bar {
+    margin-top: -50px;
+    flex-direction: row;
+    align-items: center;
+    .job-languages {
+      border: none;
+    }
+  }
 }

@@ -12,6 +12,7 @@ body {
 .attribution {
   font-size: 12px;
   text-align: center;
+  margin-bottom: 10px;
 }
 .attribution a {
   color: hsl(228deg, 45%, 44%);
@@ -19,6 +20,7 @@ body {
 
 .header {
   background-image: url(./images/bg-header-desktop.svg);
+  background-color: hsl(180deg, 29%, 50%);
   height: 150px;
 }
 
@@ -89,7 +91,7 @@ body {
   list-style: none;
 }
 .job-container .job-languages ul li {
-  display: inline;
+  display: inline-block;
   color: hsl(180deg, 29%, 50%);
   background-color: hsl(180deg, 31%, 95%);
   padding: 7px;
@@ -105,4 +107,70 @@ body {
 
 .featured-job {
   border-left: 5px solid hsl(180deg, 29%, 50%);
+}
+
+.filter-bar {
+  width: 90%;
+  margin-top: -40px;
+  padding: 30px;
+}
+.filter-bar .clear {
+  color: hsl(180deg, 29%, 50%);
+  cursor: pointer;
+  font-weight: 700;
+}
+.filter-bar .clear:hover {
+  text-decoration: underline;
+}
+.filter-bar .icon-remove {
+  background-color: hsl(180deg, 29%, 50%);
+  padding: 7px;
+  padding: 7px auto;
+  margin-left: 7px;
+  margin: auto;
+}
+.filter-bar ul li {
+  padding-right: 0 !important;
+}
+.filter-bar ul li:hover .icon-remove {
+  background-color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-image: url(./images/bg-header-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+  }
+  .job-container {
+    position: relative;
+    margin-top: 75px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .job-container .job-info .job-details {
+    margin: 25px 10px;
+  }
+  .job-container .job-info .company-logo {
+    position: absolute;
+    top: -45px;
+  }
+  .job-container .job-languages {
+    border-top: 2px solid rgba(128, 128, 128, 0.35);
+    width: 95%;
+    padding-top: 10px;
+  }
+  .filter-bar {
+    margin-top: -50px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .filter-bar .job-languages {
+    border: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
