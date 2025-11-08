@@ -1,4 +1,4 @@
-import * as data from './data.json' assert { type: 'json' };
+import * as data from './data.json' with { type: 'json' };
 
 let jobsData = data.default;
 
