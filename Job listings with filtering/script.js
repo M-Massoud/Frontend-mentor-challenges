@@ -6,6 +6,13 @@ let filterCategories = { role: '', level: '', tools: [], languages: [] };
 const jobsContainer = document.querySelector('.jobs-container');
 const filterBar = document.querySelector('.filter-bar');
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
 function renderJobs() {
   return jobsData
     .map(job => {
@@ -101,6 +108,7 @@ function addToFilterCategories(event) {
   filterJobsData();
   filterBar.innerHTML = renderFilterCategories();
   jobsContainer.innerHTML = renderJobs();
+  scrollToTop();
 }
 
 function renderFilterCategories() {
